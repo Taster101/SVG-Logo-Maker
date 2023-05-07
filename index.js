@@ -38,7 +38,8 @@ inquirer.prompt([{
         SVG.setColor(data.shapeColor)
         SVG.setTextColor(data.textColor)
         SVG.setText(data.text)
-        console.log(SVG.render())
+        const type = SVG.render()
+       // console.log(SVG.render())
         writeFile('logo.svg',type,(err) => err ? console.log(err) : console.log('succesfully created LOGO!'))
         return SVG;
      } 
@@ -47,7 +48,8 @@ inquirer.prompt([{
         SVG.setColor(data.shapeColor)
         SVG.setTextColor(data.textColor)
         SVG.setText(data.text)
-        console.log(SVG.render())
+       // console.log(SVG.render())
+        const type = SVG.render()
         writeFile('logo.svg',type,(err) => err ? console.log(err) : console.log('succesfully created LOGO!'))
         return SVG;
      } else {
